@@ -156,3 +156,9 @@ class Input(Resource):
 ```python
 python app_restful.py
 ```
+### Deploy Flask on Heroku
+
+1. Create requirements.txt
+```bash
+pip freeze > requirements.txt
+```
