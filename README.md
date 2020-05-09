@@ -164,8 +164,13 @@ pip install gunicorn
 ```
 
 2. Create requirements.txt
+*IMPORTANT* include ONLY dependencies you use in the app. Otherwise 
+there will be problems when deploying to Heroku.
 ```bash
 pip freeze > requirements.txt
+
+# run this, choose from here and paste into requirements.txt
+pip freeze > requirements_alt.txt
 ```
 
 3. Create a new file with Procfile as the name and do not add any extension. Add this line below
