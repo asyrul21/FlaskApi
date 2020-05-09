@@ -173,3 +173,15 @@ pip freeze > requirements.txt
 web: gunicorn app:app
 ```
 web is used by Heroku to start a web server for the application. The app:app specifies the module and application name. In our application we have the app module and our flask application is also called app. If your’s are different you can change them.
+
+4. Commit changes
+```bash
+git add .
+git commit -m "message"
+git push
+```
+5. Deploy to heroku
+```bash
+heroku create <name>
+git push heroku master
+```
