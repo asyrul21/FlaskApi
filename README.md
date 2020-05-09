@@ -190,3 +190,17 @@ git push
 heroku create <name>
 git push heroku master
 ```
+# API Call
+You can now call the API
+```bash
+https://flask-restful-example.herokuapp.com/input/?message=hello
+```
+
+Response:
+```json
+{
+    "source": "bot",
+    "input": "hello",
+    "response": "Hi there!"
+}
+```
